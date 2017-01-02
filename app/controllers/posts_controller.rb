@@ -24,11 +24,12 @@ class PostsController < ApplicationController
     render 'update'
   end
 
-  def patch
-    @post = Post.find_by(id: params[:id]) #.assign_attributes(post_params)
-    if @post && @post.save
-      render partial: 'post'
+  def update
+    @post = Post.find_by(id: params[:id])
+    if @post && @post.update(post_params)
+      render partial: 'post', locals: { post: @post }
     end
+    @errors = @post.errors.full_messages
   end
 
   private
