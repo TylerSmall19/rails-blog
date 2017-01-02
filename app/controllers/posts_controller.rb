@@ -7,6 +7,10 @@ class PostsController < ApplicationController
     post = Post.new(post_params)
     if post.save
       redirect_to '/'
+    else
+      @posts = Post.all.order(created_at: :desc )
+      @errors = post.errors.full_messages
+      render 'index'
     end
   end
 

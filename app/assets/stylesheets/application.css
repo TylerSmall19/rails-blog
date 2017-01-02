@@ -21,3 +21,11 @@
   text-align: center;
   margin: 5px auto;
 }
+
+.error-text {
+  color: red;
+}
+
+.error-text:before, .error-text:after {
+  content: '*';
+}
