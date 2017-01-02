@@ -3,25 +3,12 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+I don't really have many things to say about this blog, but to get it running:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* <tt>$ bundle install</tt>
+* <tt>$ bundle exec rake db:setup</tt>
+* <tt>$ rails server</tt>
+* Browse to localhost:3000
 
 
 Please feel free to use a different markup language if you do not plan to run
