@@ -9,7 +9,3 @@ I don't really have many things to say about this blog, but to get it running:
 * <tt>$ bundle exec rake db:setup</tt>
 * <tt>$ rails server</tt>
 * Browse to localhost:3000
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
